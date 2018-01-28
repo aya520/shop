@@ -13,4 +13,14 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "blog.settings")
 
+
+from blog.settings import DEBUG
+
+
+
 application = get_wsgi_application()
+
+
+if not DEBUG:    # Running on Heroku
+    from dj_static import Cling
+    application = Cling(get_wsgi_application())
