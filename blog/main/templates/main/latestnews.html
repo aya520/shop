@@ -1,0 +1,34 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>XX賣場</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/table.css' %}">
+  </head>
+  <body>
+    {% include 'main/menu.html' %}
+    <h1>最新消息</h1>
+    <h4>歡迎來到賣場，您可盡情瀏覽商品、評價與購買。</h4>
+    
+    <table border="0">
+    　<tr>
+    　<td>AVALON B群洗髮精家庭號-946ml</td>
+    　<td><img src="{% static 'main/img/e.jpg' %}" alt="AVALON B群洗髮精家庭號-946ml" /></td>
+    　</tr>
+    　<tr>
+    　<td><img src="{% static 'main/img/f.jpg' %}" alt="義大利Illy低咖啡因咖啡粉 250g" /></td>
+    　<td>義大利Illy低咖啡因咖啡粉 250g</td>
+    　</tr>
+    <tr>
+    　<td>Selecline直立式吸塵器 SL-HWD01</td>
+    　<td><img src="{% static 'main/img/g.jpg' %}" alt="Selecline直立式吸塵器 SL-HWD01" /></td>
+    　</tr>
+    <tr>
+    　<td><img src="{% static 'main/img/h.jpg' %}" alt="FP抽取式衛生紙130*36包" /></td>
+    　<td>FP抽取式衛生紙130*36包</td>
+    　</tr>
+  </table>
+    
+  </body>
+</html>

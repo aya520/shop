@@ -1,0 +1,27 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>XX賣場</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/table.css' %}">
+  </head>
+  <body>
+    {% include 'main/menu.html' %}
+    <table border="0">
+    　<tr>
+    　<td><h2>白蘭氏黑醋栗金盞花葉黃素<br>60ml*8入禮盒</h2>
+    <p>
+    建議售價:$559<br>
+    單價:$499<br>
+    規格:60ml*8入<br>
+    產地:台灣<br>
+    單位:1/盒<br><br>
+    
+    產品說明:<br>
+    規格:60ml*8入<br><input type="submit" value="結帳"></td>
+    　<td><img src="{% static 'main/img/c.png' %}" alt="白蘭氏黑醋栗金盞花葉黃素60ml*8入禮盒" /></td>
+    　</tr>
+  </table>
+  </body>
+</html>

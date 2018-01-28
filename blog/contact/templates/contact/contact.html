@@ -1,0 +1,40 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>XX賣場</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+  </head>
+  <body>
+    {% include 'main/menu.html' %}
+    <h1>聯絡我們</h1>
+    <form method=post action="{% url 'contact:contact' %}">
+    {% csrf_token %}
+    問題分類：<select name="problem">
+              <option value="order"> 訂單問題 </option>
+              <option value="flawed"> 商品暇疵 </option>
+              <option value="returns"> 退貨問題 </option>
+              <option value="registered"> 註冊問題 </option>
+              <option value="forget"> 忘記帳號/密碼 </option>
+              <option value="other"> 其他 </option>
+            </select><br>
+    姓名：<input type="text" name="name"><br>
+    電子郵件：<input type="email" name="email"><br>
+    行動電話：<input type="text" name="number"><br>
+    聯絡時間：<select name="time">
+              <option value="morning"> 早上 </option>
+              <option value="afternoon"> 下午 </option>
+              <option value="night"> 晚上 </option>
+            </select><br>
+    問題描述： <textarea cols="30" rows="6">請輸入您想問的問題...</textarea>
+      <input type="submit" value="送出訊息">
+    </form>
+    {% if result %}
+      <p>{{ result }}</p>
+    {% endif %}
+    
+    
+    
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>XX賣場</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/table.css' %}">
+  </head>
+  <body>
+    {% include 'main/menu.html' %}
+    <table border="0">
+    　<tr>
+    　<td><h2>套裝年菜<br>泰式打拋酸辣蝦+人蔘土雞</h2>
+      <P>
+      建議售價:$2200<br>
+      單價:$1888<br>
+      規格:4<br>
+      產地:台灣<br>
+      單位:1/盒<br><br>
+      
+      產品說明:<br>
+      規格：5菜/組<br>(海島南洋風味辣蝦+人蔘烏骨雞)<br>
+      該商品以實際出貨為主</P><input type="submit" value="結帳"></td>
+    　<td><img src="{% static 'main/img/a.jpg' %}" alt="套裝年菜-泰式打拋酸辣蝦+人蔘土雞" /></td>
+    　</tr>
+  </table>
+  </body>
+</html>

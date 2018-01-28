@@ -1,0 +1,32 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>XX賣場</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+  </head>
+  <body>
+  {% include 'main/menu.html' %} <br><br><br><br><br>
+  
+  <div class="slider_container">
+  <div>
+    <img src="{% static 'main/img/a.jpg' %}" alt="套裝年菜-泰式打拋酸辣蝦+人蔘土雞" />
+    <span class="info">套裝年菜-泰式打拋酸辣蝦+人蔘土雞</span>
+  </div>
+  <div>
+    <img src="{% static 'main/img/b.png' %}" alt="APPLE IPHONE 7PLUS 32G-曜石黑" />
+    <span class="info">APPLE IPHONE 7PLUS 32G-曜石黑</span>
+  </div>
+  <div>
+    <img src="{% static 'main/img/c.png' %}" alt="白蘭氏黑醋栗金盞花葉黃素60ml*8入禮盒" />
+    <span class="info">白蘭氏黑醋栗金盞花葉黃素60ml*8入禮盒</span>
+  </div>
+  <div>
+    <img src="{% static 'main/img/d.png' %}" alt="尚朋堂40CM碳素定時電暖器 SH-8080C" />
+    <span class="info">尚朋堂40CM碳素定時電暖器 SH-8080C</span>
+  </div>
+</div>
+    <h4>歡迎來到賣場，您可盡情瀏覽商品、評價與購買。</h4> 
+  </body>
+</html>

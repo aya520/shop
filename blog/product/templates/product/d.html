@@ -1,0 +1,34 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>XX賣場</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/table.css' %}">
+  </head>
+  <body>
+    {% include 'main/menu.html' %}
+    <table border="0">
+    　<tr>
+    　<td><h2>尚朋堂40CM<br>碳素定時電暖器 SH-8080C</h2>
+    <p>
+    建議售價:$1990<br>
+    單價:$1780<br>
+    規格:SH-8080C<br>
+    產地:台灣<br>
+    單位:1/台<br><br>
+    
+    產品說明:<br>
+    規格:SH-8080C<br>
+    二段功率(400W/800)<br>
+    過熱自動斷電安全裝置<br>
+    75度左右擺頭<br>
+    可伸縮10公分<br>
+    直徑40公分<br>
+    植絨防燙設計<br>
+    本機採用防火阻燃材質</p><input type="submit" value="結帳"></td>
+    　<td><img src="{% static 'main/img/d.png' %}" alt="尚朋堂40CM碳素定時電暖器 SH-8080C" /></td>
+    　</tr>
+  </table>
+  </body>
+</html>

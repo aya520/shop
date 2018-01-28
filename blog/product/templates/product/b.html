@@ -1,0 +1,37 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>XX賣場</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/table.css' %}">
+  </head>
+  <body>
+    {% include 'main/menu.html' %}
+    <table border="0">
+    　<tr>
+    　<td><h2>APPLE IPHONE<br> 7PLUS 32G-曜石黑</h2>
+      <p>
+      建議售價:$24500<br>
+      規格:MQU72TA/A<br>
+      產地:中國大陸<br>
+      單位:1/台<br><br>
+      
+      產品說明:<br>
+      5.5 吋 Retina HD 顯示器<br>
+      1920 x 1080 像素，401 ppi 解析度<br>
+      IP67 等級 防潑、抗水與防塵<br>
+      64 位元架構的 A10 Fusion 晶片<br>
+      1200 萬像素廣角與長焦鏡頭相機<br>
+      光學變焦；高達 10 倍數位變焦<br>
+      人像模式<br>
+      FaceTime HD 相機<br>
+      Touch ID<br>
+      FaceTime 語音通話<br>
+      Touch ID 指紋感測器<br>
+      iOS 11<br><input type="submit" value="結帳"></td>
+    　<td><img src="{% static 'main/img/b.png' %}" alt="APPLE IPHONE 7PLUS 32G-曜石黑" /></td>
+    　</tr>
+  </table>
+  </body>
+</html>

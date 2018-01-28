@@ -1,0 +1,30 @@
+<div id="menu">
+ <ul>
+    <li> <a href="{% url 'main:main' %}">首頁</a> </li>
+ 
+    <li> <a href="{% url 'main:latestnews' %}">最新消息</a>
+      <ul>
+        <li><a href="{% url 'main:discount' %}">優惠</a></li>
+        <li><a href="{% url 'main:recommend' %}">推薦</a></li>
+      </ul>
+    </li>
+    
+    <li> <a href="{% url 'product:product' %}">商品專區</a>
+      <ul>
+        <li><a href="{% url 'product:a' %}">套裝年菜</a></li>
+        <li><a href="{% url 'product:b' %}">IPHONE7PLUS32G</a></li>
+        <li><a href="{% url 'product:c' %}">白蘭氏黑醋栗金盞花葉黃素</a></li>
+        <li><a href="{% url 'product:d' %}">尚朋堂碳素定時電暖器</a></li>
+      </ul>
+    </li>
+    
+    <li> <a href="{% url 'contact:contact' %}">聯絡我們</a> </li>
+    <li> <a href="{% url 'main:explain' %}">購物說明</a> </li>
+    {% if user.is_authenticated %}
+    <li><a href="{% url 'account:logout' %}">登出 ({{ user.username }})</a></li>
+  {% else %}
+    <li><a href="{% url 'account:register' %}">註冊</a></li>
+    <li><a href="{% url 'account:login' %}">登入</a></li>
+    {% endif %}
+  </ul>
+</div>
